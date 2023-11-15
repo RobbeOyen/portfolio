@@ -10,10 +10,13 @@ circleLinks.forEach((link) => {
     e.preventDefault();
     const targetId = link.getAttribute("href");
     const targetElement = document.querySelector(targetId);
-    const circleBackground = document.querySelector('.circle-background');
-    const circleBackgroundHeight = circleBackground.getBoundingClientRect().height;
+    const circleBackground = document.querySelector(".circle-background");
+    const circleBackgroundHeight =
+      circleBackground.getBoundingClientRect().height;
     const targetTop =
-      targetElement.getBoundingClientRect().top + window.scrollY - circleBackgroundHeight;
+      targetElement.getBoundingClientRect().top +
+      window.scrollY -
+      circleBackgroundHeight;
     window.scrollTo({ top: targetTop, behavior: "smooth" });
   });
 });
@@ -77,27 +80,46 @@ window.addEventListener("scroll", (e) => {
   const circleEl = document.querySelector(".circle");
   circleEl.style.transform = `rotate(${angle}deg)`;
 });
-// navigatie van slideshow
-    let slideIndex = 1;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
+
+function initSlideshow(selector) {
+    const slideshowWrapperEl = document.querySelector(selector);
+    const slideElements = slideshowWrapperEl.querySelectorAll('.slide');
+    const prevSlideButton = slideshowWrapperEl.querySelector('.prev');
+    const nextSlideButton = slideshowWrapperEl.querySelector('.next');
+    let slideIndex = 0;
+
+    prevSlideButton.addEventListener('click', showPrevSlide);
+    nextSlideButton.addEventListener('click', showNextSlide);
+
+    function updateSlideElements() {
+        for (let i = 0; i < slideElements.length; i++) {
+            slideElements[i].style.display = "none";
+          }
+        
+          slideElements[slideIndex].style.display = "block";
     }
 
-    function showSlides(n) {
-        let slides = document.querySelectorAll('.slide');
-        
-        if (n > slides.length) {
-            slideIndex = 1;
+    function showPrevSlide() {
+        slideIndex-=1;
+        if (slideIndex < 0) {
+            slideIndex = slideElements.length - 1;
         }
-        if (n < 1) {
-            slideIndex = slides.length;
-        }
-        
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        
-        slides[slideIndex - 1].style.display = "block";
+        updateSlideElements();
     }
+
+    function showNextSlide() {
+        slideIndex+=1;
+        if (slideIndex > slideElements.length - 1) {
+            slideIndex = 0;
+        }
+        updateSlideElements();
+    }
+    
+
+    updateSlideElements();
+
+}
+
+initSlideshow('#slideshow-content-magazine');
+initSlideshow('#slideshow-wish-you-were-here');
