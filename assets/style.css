@@ -1,0 +1,111 @@
+.circle-background {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 360px;
+  background: white;
+}
+.circle-wrapper {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 50vw;
+  transform: rotate(180deg);
+}
+.circle {
+  position: fixed;
+}
+.circle a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center left;
+  font-size: 20pt;
+  font-family: Helvetica, sans-serif;
+  color: black;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.circle a:hover {
+font-size: 30pt;
+font-weight: 900;
+}
+main {
+  position: relative;
+  z-index: 0;
+  font-size: 18pt;
+  padding-top: 200px;
+  top: 30vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+/* slideshow */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+.slide {
+  display: none;
+}
+
+.content-magazine-img{
+width: 100%;
+}
+.Wish-you-where-here-img{
+  width: 100%;
+}
+
+/* Style the navigation controls */
+.controls {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.prev, .next {
+  display: inline-block;
+  padding: 10px;
+  background-color:#fff;
+  color:black;
+  cursor: pointer;
+}
+
+@media (min-width: 550px) {
+  .circle-background {
+    height: 0;
+  }
+  .circle-wrapper {
+    transform: rotate(0deg);
+    top: 50vh;
+    left: 0vw;
+  }
+  .circle a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center left;
+    font-size: 25pt;
+    font-family: Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+  }
+  .circle a:hover {
+    font-size: 40pt;
+    font-weight: 900;
+    }
+  main {
+    padding-top: 0;
+    padding-left: 40vw;
+  }
+}
+h1{
+  font-family: Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
