@@ -123,3 +123,4 @@ function initSlideshow(selector) {
 
 initSlideshow('#slideshow-content-magazine');
 initSlideshow('#slideshow-wish-you-were-here');
+initSlideshow('#slideshow-zuiderpershuis');
