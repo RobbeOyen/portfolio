@@ -27,6 +27,7 @@
   color: black;
   text-decoration: none;
   white-space: nowrap;
+  transition: 0.5s;
 }
 .circle a:hover {
 font-size: 30pt;
@@ -55,41 +56,10 @@ main {
   display: none;
 }
 
-.content-magazine-img{
+.img{
 width: 100%;
 }
 
-.Wish-you-where-here-img{
-  width: 100%;
-}
-
-.Zuiderpershuis-stairs-img{
-  width: 100%;
-}
-
-.procrastinators-club-img{
-  width: 100%;
-}
-
-.crappy-chairs-img{
-  width: 100%;
-}
-
-.NASCAR-img{
-  width: 100%;
-}
-
-.Know-It-All-img{
-  width: 100%;
-}
-
-.Nameless-chair-img{
-  width: 100%;
-}
-
-.Predikheren-Church-img{
-  width: 100%;
-}
 /* Style the navigation controls */
 .controls {
   user-select: none;
@@ -107,6 +77,7 @@ width: 100%;
 .link{
 color: black;
 }
+
 
 @media (min-width: 550px) {
   .circle-background {
@@ -126,6 +97,7 @@ color: black;
     font-family: Helvetica, sans-serif;
     color: black;
     text-decoration: none;
+    transition: 0.5s;
   }
   .circle a:hover {
     font-size: 40pt;
