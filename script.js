@@ -122,5 +122,11 @@ function initSlideshow(selector) {
 }
 
 initSlideshow('#slideshow-content-magazine');
-initSlideshow('#slideshow-wish-you-were-here');
+initSlideshow('#slideshow-procrastinators-club');
+initSlideshow('#slideshow-crappy-chairs');
+initSlideshow('#slideshow-NASCAR');
+initSlideshow('#slideshow-Know-It-All');
+initSlideshow('#slideshow-Nameless-chair');
+initSlideshow('#slideshow-Predikheren-Church');
+initSlideshow('#slideshow-Wish-you-where-here');
 initSlideshow('#slideshow-zuiderpershuis');

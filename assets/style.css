@@ -58,10 +58,38 @@ main {
 .content-magazine-img{
 width: 100%;
 }
+
 .Wish-you-where-here-img{
   width: 100%;
 }
 
+.Zuiderpershuis-stairs-img{
+  width: 100%;
+}
+
+.procrastinators-club-img{
+  width: 100%;
+}
+
+.crappy-chairs-img{
+  width: 100%;
+}
+
+.NASCAR-img{
+  width: 100%;
+}
+
+.Know-It-All-img{
+  width: 100%;
+}
+
+.Nameless-chair-img{
+  width: 100%;
+}
+
+.Predikheren-Church-img{
+  width: 100%;
+}
 /* Style the navigation controls */
 .controls {
   user-select: none;
@@ -75,6 +103,9 @@ width: 100%;
   background-color:#fff;
   color:black;
   cursor: pointer;
+}
+.link{
+color: black;
 }
 
 @media (min-width: 550px) {
