@@ -95,24 +95,12 @@ color: black;
     font-weight: 400;
     color: black;
     text-decoration: none;
-    transition: 0.5s;
-  }
-  @keyframes text-animation {
-    from {
-      font-variation-settings: "wght" 400;
-    }
-    to {
-      font-variation-settings: "wght" 800;
-    }
+    font-variation-settings: "wght" 400;
+    transition: font-variation-settings 0.3s ease;
   }
   .circle a:hover {
-    font-family: 'Inter', sans-serif;
-    transition: font-variation-settings 0.3s ease;
-    animation-name: text-animation;
-    animation-duration: 0.5s;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    }
+    font-variation-settings: "wght" 800;
+  }
     
   main {
     top: 0;
