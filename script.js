@@ -122,9 +122,11 @@ function initSlideshow(selector) {
 }
 
 initSlideshow('#slideshow-content-magazine');
+initSlideshow('#slideshow-Meta-ironic-pomo-Font');
 initSlideshow('#slideshow-procrastinators-club');
 initSlideshow('#slideshow-crappy-chairs');
 initSlideshow('#slideshow-NASCAR');
+initSlideshow('#slideshow-Lunacy');
 initSlideshow('#slideshow-Know-It-All');
 initSlideshow('#slideshow-Nameless-chair');
 initSlideshow('#slideshow-Predikheren-Church');
